@@ -21,6 +21,7 @@ class AuthController extends Controller
     | a simple trait to add these behaviors. Why don't you explore it?
     |
     */
+    protected $redirectAfterLogout = '/auth/login';
 
     protected $username = 'name';
 
@@ -64,7 +65,6 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
-        Log::info($user->toArray());
         $user->roles()->attach(1);
         return $user;
     }

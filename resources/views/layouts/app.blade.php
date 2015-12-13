@@ -26,6 +26,7 @@
                     <li><a href="services">我们的服务</a></li>
                     <li><a href="contact">联系我们</a></li>
                     <li><a href="/auth/login">登 录</a></li>
+                    <li><a href="/auth/logout">注 销</a></li>
                     <li><a href="/auth/register">注 册</a></li>
                 </ul>
             </div>
