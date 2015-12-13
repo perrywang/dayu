@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('layouts.app');
 });
 
+Route::get('/user/search',function(){
+    return view('user.search');
+});
+
+Route::post('/user/search',function(){
+    return view('user.clist');
+});
+
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');

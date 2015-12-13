@@ -14,21 +14,21 @@
             <div data-role="header" style="background-color:teal;color:white">
                 <h2>大愚律税财咨询系统</h2>  
                 <a href="#menu" class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>              
-            </div><!-- /header -->
+            </div>
             
             <div role="main" class="ui-content">
-            <a href="/auth/login">login</a>
-            <a href="/auth/register">register</a>
                 @yield('content')
-            </div><!-- /content -->
+            </div>
 
-            <div data-role="panel" id="menu" data-position="right" data-display="overlay" data-theme="a" style="width:50%;min-height:90%;top:2.7em;">
+            <div data-role="panel" id="menu" data-position="right" data-display="overlay" data-theme="a" style="width:50%;min-height:92%;top:2.7em;">
                 <ul data-role="listview">
                     <li><a href="about">关于大愚</a></li>
                     <li><a href="services">我们的服务</a></li>
                     <li><a href="contact">联系我们</a></li>
+                    <li><a href="/auth/login">登 录</a></li>
+                    <li><a href="/auth/register">注 册</a></li>
                 </ul>
-            </div><!-- /leftpanel3 -->
-        </div><!-- /page -->   
+            </div>
+        </div>   
     </body>
 </html>

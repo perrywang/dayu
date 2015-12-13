@@ -21,6 +21,8 @@ class AuthController extends Controller
     |
     */
 
+    protected $username = 'name';
+
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
     /**
@@ -60,6 +62,7 @@ class AuthController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'role' => 'user',
         ]);
     }
 }
