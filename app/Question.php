@@ -15,4 +15,9 @@ class Question extends Model
     {
     	return $this->belongsTo('App\User','submit_by');
     }
+
+    public function category()
+    {
+    	return $this->belongsTo('App\Category');
+    }
 }

@@ -58,4 +58,9 @@ class User extends Model implements AuthenticatableContract,
         return $this->belongsToMany('App\Role');
     }
 
+    public function inbox()
+    {
+        return $this->hasOne('App\Inbox');
+    }
+
 }

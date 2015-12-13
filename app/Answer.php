@@ -15,4 +15,9 @@ class Answer extends Model
     {
     	return $this->belongsTo('App\User','answered_by');
     }
+
+    public function feedback()
+    {
+    	return $this->hasOne('App\Feedback');
+    }
 }
