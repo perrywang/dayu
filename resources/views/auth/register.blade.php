@@ -13,4 +13,5 @@
     <input type="password" name="password_confirmation">
     <button type="submit" style="background-color:teal;margin-top:2em;color:white;">注 册</button>
 </form>
+
 @endsection
