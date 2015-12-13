@@ -16,6 +16,7 @@ class CreateAnswersTable extends Migration
             $table->increments('id');
             $table->integer('answered_by');
             $table->integer('question_id');
+            $table->tinyInteger('feedback');// 0,not satisfied,1 satisfied
             $table->timestamps();
         });
     }
